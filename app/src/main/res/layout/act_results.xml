@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.tfg.marc.imageblender.Activities.ResultsActivity"
+    android:background="#006699">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#006699">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save the resulting image or go back to keep testing"
+            android:id="@+id/textView"
+
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="26dp" />
+
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/button"
+            android:onClick="viewStats"
+            android:src="@drawable/stats"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/imageButton"
+            android:src="@drawable/save2"
+            android:onClick="saveButtonClicked"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+
+            android:layout_toStartOf="@+id/button"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputt"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

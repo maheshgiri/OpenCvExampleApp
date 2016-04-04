@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.tfg.marc.imageblender.Activities.FinalSettingsActivity"
+    android:orientation="vertical"
+    android:background="#006699">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 4: Select position"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImagePos"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="Blend"
+        android:id="@+id/button"
+        android:onClick="fesBlending"
+        android:layout_column="6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+
+    <CheckBox
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:text="mixed blending?"
+        android:id="@+id/mixedCheckBox"
+        android:checked="false"
+        android:layout_toEndOf="@+id/ImagePos"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/row4"
+            android:background="#009900">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality"
+                android:id="@+id/textView2" />
+
+            <SeekBar
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:max="100"
+                android:indeterminate="false"
+                android:layout_column="4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed"
+                android:id="@+id/textView3"
+                android:layout_column="5" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>

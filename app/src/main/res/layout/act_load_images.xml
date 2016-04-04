@@ -1,0 +1,89 @@
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#006699"
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="1000px"
+        android:layout_height="wrap_content"
+        android:text="Step 1: choose a target image    "
+        android:id="@+id/msg"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:text="select"
+        android:background="#006699"
+        android:id="@+id/b1"
+        android:src="@drawable/buscar"
+        android:onClick="carregaButton"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_toStartOf="@+id/reduceBtn"
+
+        android:layout_alignBottom="@+id/reduceBtn"
+        android:layout_marginRight="10dp" />
+
+    <ImageButton
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="New Button"
+        android:id="@+id/reduceBtn"
+        android:src="@drawable/menys"
+        android:onClick="decreaseBtnClicked"
+        android:background="#006699"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_toStartOf="@+id/rotateBtn"
+        android:layout_marginRight="10dp"
+
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:id="@+id/rotateBtn"
+        android:src="@drawable/rotate"
+        android:onClick="rotateBtnClicked"
+        android:background="#006699"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:background="#006699"
+        android:id="@+id/button3"
+        android:onClick="okBtnClicked"
+        android:src="@drawable/v"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/destImageView"
+        android:adjustViewBounds ="false"
+        android:layout_gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

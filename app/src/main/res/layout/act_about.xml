@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.tfg.marc.imageblender.Activities.AboutActivity"
+    android:background="#006699">
+
+    <TextView
+        android:text="This app implements the Poisson image editing algorithm created by Pérez et Al. in 2003 \n \n
+        The app has been created by Marc Sanchez at Universitat de Barcelona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

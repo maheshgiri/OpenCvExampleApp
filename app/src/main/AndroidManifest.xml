@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hemis.opencvapp">
+<!--
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> 
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivityA"
+            android:theme="@style/Theme.AppCompat"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label= "@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".Activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="aaa"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Activities.LoadImagesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_blending"
+            android:parentActivityName=".Activities.MainActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.DrawingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_drawing"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Activities.FinalSettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_position"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Activities.ResultsActivity"
+            android:label="@string/title_activity_results"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+</manifest>
